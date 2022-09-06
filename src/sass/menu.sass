@@ -1,0 +1,65 @@
+@import "normalize.scss"
+@import "reset.scss"
+
+@font-face
+    font-family: Roboto
+    src: url(../fonts/Roboto-Regular.ttf)
+    font-weight: regular
+    font-style: normal
+
+@font-face
+    font-family: Roboto
+    src: url(../fonts/Roboto-Bold.ttf)
+    font-weight: bold
+    font-style: normal
+
+body
+    background-color: #000000
+    background-image: url(../img/backgrad.png)
+    background-size: cover
+    height: 100%
+    width: 100%
+
+.mainWrapper
+    position: relative
+    width: 410px
+    height: 380px
+    margin: auto
+    top: 10%
+    .animgif
+        position: absolute
+        top: 53px
+        left: 0
+    .rabgif
+        position: absolute
+        top: -80px
+        left: 320px
+        width: 100px
+    .catgif
+        position: absolute
+        top: 215px
+        left: 320px
+        width: 80px
+    ul
+        li
+            margin-bottom: 60px
+            &:last-child
+                margin-bottom: 0
+            button
+                border: none
+                width: 401px
+                height: 84px
+                background: rgba(96, 96, 96, .3)
+                border-radius: 40px
+                font-family: 'Roboto'
+                font-weight: regular
+                font-size: 36px
+                transition: 1s
+                &:hover
+                    transition: 1s
+                    opacity: 0.2
+                    text-shadow: 1px 10px 15px white
+                a
+                    text-decoration: none
+                    color: white
+                    

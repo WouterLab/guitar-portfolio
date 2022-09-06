@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap')
+
+*
+  box-sizing: border-box
+
+body
+  font-family: 'Roboto', sans-serif
+  background: radial-gradient(circle at -16% -16%, hotpink, slateblue)
+  background-size: cover
+  height: 100vh
+  display: flex
+  padding-top: 5rem
+  justify-content: center
+  overflow: hidden
+  margin: 0
+
+.btn
+  color: white
+  background: linear-gradient(90deg, #209cff 0%, #68e0cf 100%)
+  width: 200px
+  height: 50px
+  border: none
+  border-radius: 50px
+  font-size: 16px
+  &:hover
+    cursor: pointer
+
+.row
+  display: flex
+  width: 600px
+  justify-content: space-between
+  margin-bottom: 1rem
+
+.col-header
+  width: 150px
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36)
+  border-radius: 20px
+  padding: 0.8rem 1rem
+  color: #fff
+
+.item
+  width: 150px
+  height: 66px
+  border-radius: 70% 100% 70% 100% / 70% 100% 70% 100%
+  box-shadow: 0 -2vmin 4vmin LightPink inset, 0 1vmin 4vmin MediumPurple inset, 0 -2vmin 7vmin purple inset
+  background: #f7f6f7
+  padding: 0.8rem 1rem
+  color: white
+  text-align: center
+  cursor: grab
+  animation: anim 30s infinite
+
+.item:active
+  cursor: grabbing
+
+.placeholder
+  width: 150px
+  height: 500px
+
+.start
+  background: linear-gradient(90deg, #ff85e4 0%, #229efd 179.25%)
+
+.progress
+  background: linear-gradient(90deg, #209cff 0%, #68e0cf 100%)
+
+.done
+  background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%)
+
+.hold
+  border: 2px solid red
+
+.hide
+  display: none
+
+.hovered
+  border-top: 2px solid green
+  animation: top-anim 10s infinite
+
+@keyframes top-anim
+  0%
+
+@keyframes anim
+	0%,
+  100%
+		border-radius: 30% 70% 70% 30% / 30% 52% 48% 70%
+		box-shadow: 0 -2vmin 4vmin LightPink inset, 0 -4vmin 4vmin MediumPurple inset, 0 -2vmin 7vmin purple inset
+	10%
+		border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%
+	20%
+		border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%
+	30%
+		border-radius: 39% 61% 47% 53% / 37% 40% 60% 63%
+		box-shadow: 0 -4vmin 8vmin hotpink inset, -1vmin -2vmin 6vmin LightPink inset, -1vmin -2vmin 4vmin MediumPurple inset, 1vmin 4vmin 8vmin purple inset
+	40%
+		border-radius: 39% 61% 82% 18% / 74% 40% 60% 26%
+	50%
+		border-radius: 100%
+		box-shadow: 0 4vmin 16vmin hotpink inset, 0 2vmin 5vmin LightPink inset, 0 4vmin 4vmin MediumPurple inset, 0 6vmin 8vmin purple inset
+	60%
+		border-radius: 50% 50% 53% 47% / 72% 69% 31% 28%
+	70%
+		border-radius: 50% 50% 53% 47% / 26% 22% 78% 74%
+		box-shadow: 1vmin 1vmin 8vmin LightPink inset, 2vmin -1vmin 4vmin MediumPurple inset, -1vmin -1vmin 16vmin purple inset
+	80%
+		border-radius: 50% 50% 53% 47% / 26% 69% 31% 74%
+	90%
+		border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%
